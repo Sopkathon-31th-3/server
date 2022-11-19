@@ -169,3 +169,116 @@
 
 [API 명세서](https://golden-rib-2f1.notion.site/99b4f3e386314b808898823ae5e2c343?v=f7b701095aca41be934cb6ac876ee272)
 
+<br>
+
+<br>
+
+## <strong> package.json </strong>
+
+
+```json
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc && node dist",
+    "lint": "yarn run lint-prettier && yarn run lint-eslint",
+    "lint-eslint": "eslint --ignore-path .gitignore src/**/*ts --fix",
+    "lint-prettier": "prettier --write \"src/**/*.(ts|tsx)\""
+  },
+  "lint-staged": {
+    "src/**/*.(ts|tsx)": [
+      "yarn lint"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^17.0.25",
+    "eslint": "^8.16.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "bcryptjs": "^2.4.3",
+    "dayjs": "^1.11.6",
+    "dotenv": "^16.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "lint-staged": "^12.1.5",
+    "mongoose": "^6.3.1",
+    "prettier": "^2.5.1",
+    "prisma": "^4.6.1"
+  }
+}
+```
+
+
+<br>
+
+<br>
+
+## <strong> schema.prisma </strong>
+
+
+```json
+{
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model food {
+  id       Int    @id(map: "food_pk") @unique(map: "food_id_uindex")
+  foodName String @db.VarChar(20)
+  price    Int
+}
+
+model wish {
+  id       Int      @id(map: "wish_pk") @unique @default(autoincrement())
+  wishItem String   @db.VarChar(30)
+  price    Int
+  date     DateTime @db.Timestamp(6)
+}
+
+}
+```
+
+
+
+<br>
+
+<br>
+
+
+## <strong> ERD </strong>
+
+<img width="261" alt="KakaoTalk_Photo_2022-11-20-06-52-52" src="https://user-images.githubusercontent.com/86148470/202872913-6d4f3b3c-6b6d-4224-a649-b181776504b2.png">
+
+<br>
+
+<br>
+
+## <strong> server architecture </strong>
+	
+<img width="796" alt="KakaoTalk_Photo_2022-11-20-06-59-44" src="https://user-images.githubusercontent.com/86148470/202873115-c069cc26-3cd6-4fa9-8c68-98a7306c1e2e.png">

@@ -1,1 +1,5 @@
-export { default as userController } from "./userController";
+import wishController from "./wishController";
+
+export {
+    wishController,
+};

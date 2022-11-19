@@ -1,8 +1,10 @@
 import { Router } from "express";
-import userRouter from "./userRouter";
+import foodRouter from "./foodRouter";
+import wishRouter from "./wishRouter";
 
 const router: Router = Router();
 
-router.use("/user", userRouter);
+router.use("/favorite-food", foodRouter);
+router.use("/wish", wishRouter);
 
 export default router;

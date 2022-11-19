@@ -1,1 +1,2 @@
-export { default as userService } from "./userService";
+export { default as foodService } from "./foodService";
+export { default as wishService } from "./wishService";

@@ -12,3 +12,10 @@ model food {
   foodName String @db.VarChar(20)
   price    Int
 }
+
+model wish {
+  id       Int      @id(map: "wish_pk") @unique @default(autoincrement())
+  wishItem String   @db.VarChar(30)
+  price    Int
+  date     DateTime @db.Timestamp(6)
+}

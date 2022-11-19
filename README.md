@@ -4,6 +4,10 @@
 > 31th IN SOPT 솝커톤 3조 <br>
 > 프로젝트 기간 : 2022.11.19 ~ 2022.11.20
 
+🔔 서비스명 : 소원을 말(만)해봐
+
+🔔 서비스 한줄소개 : 물가 상승에도 위시리스트 포기 못하는 당신을 위한 환율 계산기
+
 <br>
 
 ### <strong> 🏃 Server 🏃 </strong>
@@ -154,21 +158,14 @@
 ### <strong> 🏃 APIs 🏃 </strong>
 |   EndPoint   |               detail               | developer | done |
 | :------: | :--------------------------------: | :-------: |:--: |
-|   User  |       정보 조회       |   예원    |  ✅  |
-|         |       정보       |   민욱    |  ✅  |
-|   Run   |       정보 전달       |   예원    |  ✅  |
-|         |       정보 조회에       |   예원    |  ✅  |
-
+|   RESULT  |       결과 페이지 정보      |   민욱    |    |
+|   WISH  |       소원 정보 받기      |   예원    |    |
+|   FOOD  |       좋아하는 음식 정보 받기      |   민욱    |    |
 <br>
 
 <br>
 
-## <strong> ERD & Directory Tree</strong>
-<details>
-<summary>🗄 ERD</summary>
+## <strong> API 명세서</strong>
 
+[API 명세서](https://golden-rib-2f1.notion.site/99b4f3e386314b808898823ae5e2c343?v=f7b701095aca41be934cb6ac876ee272)
 
-</details>
-<br>
-
-<br>

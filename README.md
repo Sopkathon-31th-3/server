@@ -275,4 +275,10 @@ model wish {
 
 <img width="261" alt="KakaoTalk_Photo_2022-11-20-06-52-52" src="https://user-images.githubusercontent.com/86148470/202872913-6d4f3b3c-6b6d-4224-a649-b181776504b2.png">
 
+<br>
 
+<br>
+
+## <strong> server architecture </strong>
+	
+<img width="796" alt="KakaoTalk_Photo_2022-11-20-06-59-44" src="https://user-images.githubusercontent.com/86148470/202873115-c069cc26-3cd6-4fa9-8c68-98a7306c1e2e.png">

@@ -228,3 +228,51 @@
   }
 }
 ```
+
+
+<br>
+
+<br>
+
+## <strong> schema.prisma </strong>
+
+
+```json
+{
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model food {
+  id       Int    @id(map: "food_pk") @unique(map: "food_id_uindex")
+  foodName String @db.VarChar(20)
+  price    Int
+}
+
+model wish {
+  id       Int      @id(map: "wish_pk") @unique @default(autoincrement())
+  wishItem String   @db.VarChar(30)
+  price    Int
+  date     DateTime @db.Timestamp(6)
+}
+
+}
+```
+
+
+
+<br>
+
+<br>
+
+
+## <strong> ERD </strong>
+
+<img width="261" alt="KakaoTalk_Photo_2022-11-20-06-52-52" src="https://user-images.githubusercontent.com/86148470/202872913-6d4f3b3c-6b6d-4224-a649-b181776504b2.png">
+
+

@@ -15,7 +15,7 @@
 | <img src="https://avatars.githubusercontent.com/u/82046935?v=4" width="200">|<img src="https://avatars.githubusercontent.com/u/86148470?v=4" width="200">|
 | :-----------------------------------: | :-----------------------------------------------: |
 |                김민욱                 |                      소예원                       |
-| [ 🐸 coreminw ](https://github.com/coreminw) | [ 🐸 yujindonut ](https://github.com/Soyewon) |
+| [ 🐸 coreminw ](https://github.com/coreminw) | [ 🐸 Soyewon ](https://github.com/Soyewon) |
 
 <br>
 
